@@ -1,9 +1,12 @@
 class PortfolioController < ApplicationController
 
-  def index
+  def home
   end
 
-  def show
+  def projects
+  end
+
+  def skills
   end
 
 end

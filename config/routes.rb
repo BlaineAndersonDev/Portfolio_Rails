@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :portfolio, only: [:index, :show]
-
-  root 'portfolio#index'
+  get 'home' => 'portfolio#home'
+  root 'portfolio#home'
 
 end
