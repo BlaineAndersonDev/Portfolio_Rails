@@ -1,13 +1,30 @@
+*{
+margin: 0;
+padding: 0;
+}
 .container{
   display: flex;
   justify-content: space-around;
   align-items: center;
   vertical-align: middle;
   text-align: center;
+  flex-wrap: nowrap;
+  width: 100%
+}
+.stacked-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%
 }
 
 #navigation-wrapper{
-  border: 1px red solid;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 15px;
 }
   #nav-left-wrapper{
 
