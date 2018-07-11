@@ -155,3 +155,16 @@ html, body {
     min-width: 45%;
     max-width: 45%;
   }
+
+
+/* Projects Partial */
+#projects-wrapper{
+  min-width: 45%;
+  max-width: 45%;
+  background-color: red;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
