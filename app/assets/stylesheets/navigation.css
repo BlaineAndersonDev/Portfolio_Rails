@@ -1,0 +1,20 @@
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#navigation-wrapper{
+  border: 1px red solid;
+}
+  #nav-left-wrapper{
+
+  }
+  #nav-middle-wrapper{
+
+  }
+  #nav-right-wrapper{
+
+  }
