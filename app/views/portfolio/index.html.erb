@@ -1,17 +1,10 @@
 <div id="portfolio-wrapper" class="top-level-container">
 
   <!-- Navigation Bar -->
-  <div id="navigation-wrapper" class="container">
-    <div id="nav-left-wrapper" class="container">
-      <h1 id="nav-logo" class="text">LOGO HERE</h1>
-    </div>
-    <div id="nav-middle-wrapper" class="stacked-container">
-      <h1 id="nav-title" class="text">Blaine Anderson</h1>
-      <h3 id="nav-title" class="text">Software Engineer</h3>
-    </div>
-    <div id="nav-right-wrapper" class="container">
-      <h1 id="nav-menu" class="text">MENU HERE</h1>
-    </div>
+  <div id="navigation-wrapper" class="nav-container">
+    <h1 class="nav-text nav-item">Home</h1>
+    <h1 class="nav-text nav-item">Projects</h1>
+    <h1 class="nav-text nav-item">Skills</h1>
   </div>
 
   <!-- Body -->
@@ -42,7 +35,7 @@
       <% email_body = "Hello Blaine!" %>
       <% email_summery = "[Insert your message for me here!]" %>
       <% email_funny = " ♪┏(°.°)┛┗(°.°)┓┗(°.°)┛┏(°.°)┓ ♪ " %>
-      <%= link_to "mailto:BlaineAndersonDev@Gmail.com?subject=#{email_subject}&body=#{email_body}%0D%0A%0D%0A#{email_summery}%0D%0A%0D%0A#{email_funny}", :class => 'social_link' do %>
+      <%= link_to "mailto:BlaineAndersonDev@Gmail.com?subject=#{email_subject}&body=#{email_body}%0D%0A%0D%0A#{email_summery}%0D%0A%0D%0A#{email_funny}", :class => 'social-link' do %>
       <%= image_tag("Email_512_512.png", :alt => "Social_Media_Email_Image", :class => "social-image") %>
       <% end %>
       <p class="text">BlaineAndersonDev@Gmail.com</p>
@@ -50,7 +43,7 @@
     <!-- LinkedIn -->
     <div class="stacked-container social-container">
       <% linkedin_url = "https://www.linkedin.com/in/blaineandersondev/"%>
-      <%= link_to "#{linkedin_url}", target: :_blank, :class => 'social_link' do %>
+      <%= link_to "#{linkedin_url}", target: :_blank, :class => 'social-link' do %>
         <%= image_tag("Linkedin_512_512.png", :alt => "Social_Media_LinkedIn_Image", :class => "social-image") %>
       <% end %>
       <p class="text">linkedin.com/in/blaineandersondev/</p>
@@ -58,7 +51,7 @@
     <!-- Github -->
     <div class="stacked-container social-container">
       <% guthub_url = "https://github.com/BlaineAndersonDev"%>
-      <%= link_to "#{guthub_url}", target: :_blank, :class => 'social_link' do %>
+      <%= link_to "#{guthub_url}", target: :_blank, :class => 'social-link' do %>
         <%= image_tag("Github_512_512.png", :alt => "Social_Media_Github_Image", :class => "social-image") %>
       <% end %>
       <p class="text">github.com/BlaineAndersonDev</p>
@@ -66,7 +59,7 @@
     <!-- Phone -->
     <div class="stacked-container social-container">
       <% phone_number = "4803053307"%>
-      <%= link_to "#{linkedin_url}", target: :_blank, :class => 'social_link' do %>
+      <%= link_to "#{linkedin_url}", target: :_blank, :class => 'social-link' do %>
         <%= image_tag("Phone_512_512.png", :alt => "Social_Media_Phone_Image", :class => "social-image") %>
       <% end %>
       <p class="text">480-305-3307</p>
