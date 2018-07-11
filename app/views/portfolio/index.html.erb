@@ -1,3 +1,76 @@
-<%= render "shared/navigation" %>
+<div id="portfolio-wrapper" class="top-level-container">
 
-<h1>BOB</h1>
+  <!-- Navigation Bar -->
+  <div id="navigation-wrapper" class="container">
+    <div id="nav-left-wrapper" class="container">
+      <h1 id="nav-logo" class="text">LOGO HERE</h1>
+    </div>
+    <div id="nav-middle-wrapper" class="stacked-container">
+      <h1 id="nav-title" class="text">Blaine Anderson</h1>
+      <h3 id="nav-title" class="text">Software Engineer</h3>
+    </div>
+    <div id="nav-right-wrapper" class="container">
+      <h1 id="nav-menu" class="text">MENU HERE</h1>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <div id="body-wrapper" class="stacked-container">
+    <h1 class="large-text">BlaineAndersonDev.com</h1>
+    <div class="small-text">
+      <p class="text">Howdy! I'm Blaine Anderson, A Software Engineer & Web Developer based out of Mesa, Arizona. You can usually find me on a plethora of projects or working remotely for clients all over the world. </p>
+    </div>
+    <div class="small-text">
+      <p class="text">I have a diversified set of skill including:</p>
+      <p class="text">Front-End [ HTML | CSS | Javascript | ReactJS | +More]</p>
+      <p class="text">Back-End [ Ruby | Rails | Node | SQL/PG | +More]</p>
+      <p class="text">and I am eager to learn more!</p>
+    </div>
+  </div>
+
+  <!-- Image -->
+  <div id="image-wrapper" class="container">
+  <%= image_tag("Blaine_Profile_01.jpg", class: "portfolio-image") %>
+  <!-- <%= image_tag("Blaine_Profile_02.jpg", class: "portfolio-image") %> -->
+  </div>
+
+  <!-- Social Media -->
+  <div id="social-wrapper" class="scrunched-container">
+    <!-- Email -->
+    <div class="stacked-container social-container">
+      <% email_subject = "Wanted to talk about a Engineering opportunity!" %>
+      <% email_body = "Hello Blaine!" %>
+      <% email_summery = "[Insert your message for me here!]" %>
+      <% email_funny = " ♪┏(°.°)┛┗(°.°)┓┗(°.°)┛┏(°.°)┓ ♪ " %>
+      <%= link_to "mailto:BlaineAndersonDev@Gmail.com?subject=#{email_subject}&body=#{email_body}%0D%0A%0D%0A#{email_summery}%0D%0A%0D%0A#{email_funny}", :class => 'social_link' do %>
+      <%= image_tag("Email_512_512.png", :alt => "Social_Media_Email_Image", :class => "social-image") %>
+      <% end %>
+      <p class="text">BlaineAndersonDev@Gmail.com</p>
+    </div>
+    <!-- LinkedIn -->
+    <div class="stacked-container social-container">
+      <% linkedin_url = "https://www.linkedin.com/in/blaineandersondev/"%>
+      <%= link_to "#{linkedin_url}", target: :_blank, :class => 'social_link' do %>
+        <%= image_tag("Linkedin_512_512.png", :alt => "Social_Media_LinkedIn_Image", :class => "social-image") %>
+      <% end %>
+      <p class="text">linkedin.com/in/blaineandersondev/</p>
+    </div>
+    <!-- Github -->
+    <div class="stacked-container social-container">
+      <% guthub_url = "https://github.com/BlaineAndersonDev"%>
+      <%= link_to "#{guthub_url}", target: :_blank, :class => 'social_link' do %>
+        <%= image_tag("Github_512_512.png", :alt => "Social_Media_Github_Image", :class => "social-image") %>
+      <% end %>
+      <p class="text">github.com/BlaineAndersonDev</p>
+    </div>
+    <!-- Phone -->
+    <div class="stacked-container social-container">
+      <% phone_number = "4803053307"%>
+      <%= link_to "#{linkedin_url}", target: :_blank, :class => 'social_link' do %>
+        <%= image_tag("Phone_512_512.png", :alt => "Social_Media_Phone_Image", :class => "social-image") %>
+      <% end %>
+      <p class="text">480-305-3307</p>
+    </div>
+  </div>
+
+</div>

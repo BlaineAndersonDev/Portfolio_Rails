@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height:100%;
+  width:100%;
+  font-family: 'Merriweather', serif;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  flex-wrap: nowrap;
+  width: 100%
+}
+.top-level-container{
+
+}
+.stacked-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%
+}
+.scrunched-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%
+}
+
+#portfolio-wrapper{
+  min-height: 100%;
+  min-width: 100%;
+  /* background-image: url('portfolio_background_01.jpg'); */
+  /* background-image: url('portfolio_background_02.png'); */
+  background-image: url('portfolio_background_03.jpg');
+  /* background-image: url('portfolio_background_04.png'); */
+  background-size: cover;
+}
+.text{
+  color: white;
+  font-size: 1.1em;
+}
+.large-text{
+  color: white;
+  font-size: 4em;
+}
+.small-text{
+  color: white;
+  font-size: 1.1em;
+  margin: 10px;
+}
+
+  #navigation-wrapper{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+    #nav-left-wrapper{
+
+    }
+    #nav-middle-wrapper{
+
+    }
+    #nav-right-wrapper{
+
+    }
+
+  #body-wrapper{
+    width: 60%;
+    margin: 0 auto;
+  }
+
+/* Image */
+#image-wrapper{
+
+}
+  .portfolio-image{
+    border: 1px black solid;
+    border-radius: 25%;
+    margin-top: 10px;
+    max-width: 225px;
+    min-width: 225px;
+    max-height: 225px;
+    min-height: 225px;
+}
+
+/* Social Media */
+#social-wrapper{
+  width: 60%;
+  margin: 0 auto;
+
+}
+  .social_link{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .social-image{
+    max-width: 55px;
+    min-width: 55px;
+    max-height: 55px;
+    min-height: 55px;
+  }
+  .social-container{
+    min-width: 45%;
+    max-width: 45%;
+  }
