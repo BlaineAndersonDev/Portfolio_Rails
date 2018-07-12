@@ -71,21 +71,19 @@ html, body {
   font-size: 1.1em;
   margin: 10px;
 }
-.nav-text{
-  color: white;
-  font-size: 1.4em;
-}
 
   #navigation-wrapper{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(187, 180, 180, 0.2);
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .nav-item{
-    margin-top: 8px;
-    margin-bottom: 8px;
+  .nav-link{
     margin-right: 10px;
     margin-left: 10px;
+    color: white;
+    font-size: 1.4em;
+    text-decoration: none;
+    text-shadow: 1px 1px gray;
   }
 
   #body-wrapper{
