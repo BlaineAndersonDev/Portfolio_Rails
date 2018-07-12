@@ -1,2 +1,1 @@
-$(".partial-wrapper").remove()
-$("<%=j render :partial => 'projects' %>").appendTo('#AJAX-wrapper')
+ $("#AJAX-wrapper").append("<%=j render :partial => 'projects' %>").hide().fadeIn(1000);

@@ -5,7 +5,9 @@
 html, body {
   height:100%;
   width:100%;
-  font-family: 'Merriweather', serif;
+  /* font-family: 'Nanum Gothic', sans-serif; */
+  font-family: 'Playfair Display', serif;
+  /* font-family: 'Merriweather', serif; */
 }
 #portfolio-wrapper{
   min-height: 100%;
@@ -157,19 +159,15 @@ html, body {
   }
 
 
-/* Projects Partial */
-#projects-wrapper{
+/* Partial Pop-Ups */
+.AJAX-close-wrapper{
+  color: white;
   min-width: 75%;
   max-width: 75%;
   min-height: 75%;
   max-height: 75%;
-  z-index: 1;
-  /* background-image: url('portfolio_background_01.jpg'); */
-  /* background-image: url('portfolio_background_02.png'); */
-  /* background-image: url('portfolio_background_03.jpg'); */
-  background-image: url('portfolio_background_04.png');
-  background-size: cover;
-  border: gray 5px solid;
+  z-index: 5;
+  border: black 5px solid;
   border-radius: 50%;
   position: fixed;
   top: 50%;
@@ -177,35 +175,14 @@ html, body {
   transform: translate(-50%, -50%);
 }
 
-#youritem .fade.in {
-    animation-name: fadeIn;
+/* Projects Partial */
+#projects-wrapper{
+  background-image: url('portfolio_background_01.jpg');
+  background-size: cover;
 }
 
-#youritem .fade.out {
-    animation-name: fadeOut;
+/* Skills Partial */
+#skills-wrapper{
+  background-image: url('portfolio_background_02.png');
+  background-size: cover;
 }
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(startYposition);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(endYposition);
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-        transform: translateY(startYposition);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(endYposition);
-    }
-}
-
-  .partial-border{
-  }
