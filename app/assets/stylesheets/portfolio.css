@@ -233,6 +233,13 @@ html, body {
   .project-name:hover{
     color: lightblue;
   }
+  .project-name-nohover{
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    text-shadow: 1px 1px gray;
+    transition: color 0.5s;
+  }
   .project-github{
     color: white;
     font-size: 1.2em;

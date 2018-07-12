@@ -1,7 +1,5 @@
 <div id="projects-wrapper" class="AJAX-close-wrapper">
 
-    <h1 class="skill-title">My Projects</h1>
-
     <div class="project-item">
       <div class="project-item-left">
         <%= link_to "https://senyours.io/", target: :_blank, class: 'project-name' do %>
@@ -51,12 +49,10 @@
 
     <div class="project-item">
       <div class="project-item-left">
-        <%= link_to "https://senyours.io/", target: :_blank, class: 'project-name' do %>
-            <%= image_tag("sautee-seattle.png", class: "project-image") %>
-        <% end %>
+        <%= image_tag("sautee-seattle.png", class: "project-image") %>
       </div>
       <div class="project-item-right">
-        <%= link_to 'Sautee Seattle', "https://senyours.io/", target: :_blank, class: 'project-name' %>
+        <h1 class="project-name-nohover">Sautee Seattle</h1>
         <%= link_to 'Project Github', "https://github.com/Sautee-Seattle/Sautee-Seattle", target: :_blank, class: 'project-github' %>
         <p class="project-about">Created by a bunch of local foodies, Sautee Seattle focus' on local grown and sustainable produce. Provides an avenue for users to interact & replay local farmers markets and recipies.</p>
         <p class="project-tech">Technologies: Rails, PG, HTML, CSS3, Selenium, Google API, AJAX, JQuery, + More</p>
