@@ -74,6 +74,11 @@ html, body {
   font-size: 4em;
   text-shadow: 3px 3px black;
 }
+.med-text{
+  color: white;
+  font-size: 2em;
+  margin: 10px;
+}
 .small-text{
   color: white;
   font-size: 1.1em;
