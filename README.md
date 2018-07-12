@@ -1,5 +1,5 @@
 # Blaine Anderson Portfolio
-### [~Check it out~](https://blaine-anderson-dev.herokuapp.com/)
+### [Check it out](https://blaine-anderson-dev.herokuapp.com/)
 
 * This portfolio was build using multiple technologies including:
   * Ruby
