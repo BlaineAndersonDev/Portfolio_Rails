@@ -159,12 +159,53 @@ html, body {
 
 /* Projects Partial */
 #projects-wrapper{
-  min-width: 45%;
-  max-width: 45%;
-  background-color: red;
+  min-width: 75%;
+  max-width: 75%;
+  min-height: 75%;
+  max-height: 75%;
+  z-index: 1;
+  /* background-image: url('portfolio_background_01.jpg'); */
+  /* background-image: url('portfolio_background_02.png'); */
+  /* background-image: url('portfolio_background_03.jpg'); */
+  background-image: url('portfolio_background_04.png');
+  background-size: cover;
+  border: gray 5px solid;
+  border-radius: 50%;
   position: fixed;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
+
+#youritem .fade.in {
+    animation-name: fadeIn;
+}
+
+#youritem .fade.out {
+    animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(startYposition);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(endYposition);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(startYposition);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(endYposition);
+    }
+}
+
+  .partial-border{
+  }
