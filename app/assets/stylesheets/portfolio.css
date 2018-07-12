@@ -18,6 +18,9 @@ html, body {
   /* background-image: url('portfolio_background_04.png'); */
   background-size: cover;
 }
+.AJAX-close-wrapper{
+  padding-top: 60px;
+}
 .container{
   display: flex;
   justify-content: space-around;
@@ -34,6 +37,9 @@ html, body {
   vertical-align: middle;
   text-align: center;
   flex-wrap: nowrap;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
   width: 100%
 }
 
@@ -61,10 +67,12 @@ html, body {
 .text{
   color: white;
   font-size: 1.1em;
+  text-shadow: 1px 1px gray;
 }
 .large-text{
   color: white;
   font-size: 4em;
+  text-shadow: 3px 3px black;
 }
 .small-text{
   color: white;
@@ -84,6 +92,10 @@ html, body {
     font-size: 1.4em;
     text-decoration: none;
     text-shadow: 1px 1px gray;
+    transition: color 0.5s;
+  }
+  .nav-link:hover{
+    color: lightblue;
   }
 
   #body-wrapper{
@@ -156,31 +168,139 @@ html, body {
     max-width: 45%;
   }
 
-
-/* Partial Pop-Ups */
-.AJAX-close-wrapper{
-  color: white;
-  min-width: 75%;
-  max-width: 75%;
-  min-height: 75%;
-  max-height: 75%;
-  z-index: 5;
-  border: black 5px solid;
-  border-radius: 50%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* Projects Partial */
 #projects-wrapper{
-  background-image: url('portfolio_background_01.jpg');
-  background-size: cover;
+  min-width: 55%;
+  max-width: 55%;
+  color: white;
 }
+.project-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  text-align: center;
+  flex-wrap: nowrap;
+  width: 100%
+}
+.project-item-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  padding-right: 15px;
+}
+  .project-image{
+    border: 1px black solid;
+    border-radius: 25%;
+    max-width: 150px;
+    min-width: 150px;
+    max-height: 150px;
+    min-height: 150px;
+  }
+  .project-image:hover{
+    animation: shine2 1.5s ease-in-out;
+  }
+
+  @keyframes shine2 {
+    0% {
+      filter:contrast(100%);
+    }
+    20% {
+      filter:contrast(300%);
+    }
+    100% {
+      filter:contrast(100%);
+    }
+  }
+
+.project-item-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  flex-direction: column;
+}
+  .project-name{
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    text-shadow: 1px 1px gray;
+    transition: color 0.5s;
+  }
+  .project-name:hover{
+    color: lightblue;
+  }
+  .project-github{
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-shadow: 1px 1px gray;
+    transition: color 0.5s;
+  }
+  .project-github:hover{
+    color: lightblue;
+  }
+  .project-about{
+
+  }
+  .project-tech{
+    font-size: 0.8em;
+  }
+  .project-divider{
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+    margin-bottom: 6px;
+    width: 75%;
+  }
 
 /* Skills Partial */
 #skills-wrapper{
-  background-image: url('portfolio_background_02.png');
-  background-size: cover;
 }
+  .skill-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 45%
+  }
+    .skill-column{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
+      text-align: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 32%
+    }
+    .skill-title{
+      color: white;
+      font-size: 3em;
+      margin: 6px;
+      text-shadow: 1px 1px gray;
+    }
+    .skill-item{
+      color: white;
+      font-size: 1.5em;
+      margin: 10px;
+      text-shadow: 1px 1px gray;
+    }
+    .skill-description{
+      color: white;
+      font-size: 1.2em;
+      margin: 6px;
+      text-shadow: 1px 1px gray;
+    }
+    .skill-divider{
+      margin: 0 auto;
+      border-bottom: 1px solid white;
+      margin-top: 20px;
+      margin-bottom: 26px;
+      width: 50%;
+    }
