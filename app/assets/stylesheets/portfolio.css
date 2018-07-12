@@ -311,8 +311,8 @@ html, body {
     }
     .skill-divider{
       margin: 0 auto;
-      border-bottom: 1px solid white;
       margin-top: 20px;
       margin-bottom: 26px;
       width: 50%;
+      background-image: url('border.svg');
     }
