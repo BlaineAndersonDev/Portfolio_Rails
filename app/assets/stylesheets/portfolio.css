@@ -316,3 +316,50 @@ html, body {
       width: 50%;
       background-image: url('border.svg');
     }
+
+/* Handbook */
+.handbook-wrapper{
+
+}
+  .handbook-intro{
+    color: white;
+    width: 65%;
+    margin: 0 auto;
+  }
+    .handbook-title{
+      font-size: 4em;
+      margin-bottom: 30px;
+    }
+    .handbook-text{
+      font-size: 1.3em;
+      margin-bottom: 15px;
+    }
+  .handbook-link-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+    .handbook-link{
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+      margin: 10px;
+      font-size: 2em;
+      color: white;
+      border: 1px white solid;
+      background-color: none;
+      box-shadow: 0 0 0 transparent inset;
+      transition:
+        color 0.5s ease,
+        box-shadow 0.5s ease,
+        background-color 0.5s ease;
+    }.handbook-link:hover{
+      color: lightblue;
+      background-color: black;
+      box-shadow: 0 0 40px lightblue inset;
+    }
