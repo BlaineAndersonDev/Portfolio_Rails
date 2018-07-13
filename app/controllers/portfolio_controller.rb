@@ -12,4 +12,7 @@ class PortfolioController < ApplicationController
   def about
   end
 
+  def coders_handbook
+  end
+
 end
