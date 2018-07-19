@@ -40,9 +40,18 @@ html, body {
   margin: 0 auto;
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
+  border: yellow 3px solid;
 }
-
+@media (min-width: 600px) {
+  border: green 3px solid;
+ }
+@media (min-width: 1000px) {
+  border: blue 3px solid;
+ }
+@media (min-width: 1500px) {
+  border: red 3px solid;
+ }
 .stacked-container{
   display: flex;
   justify-content: space-around;
