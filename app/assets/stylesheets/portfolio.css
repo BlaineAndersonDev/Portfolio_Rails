@@ -30,28 +30,42 @@ html, body {
   flex-wrap: nowrap;
   width: 100%
 }
-.nav-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: middle;
-  text-align: center;
-  flex-wrap: nowrap;
-  margin: 0 auto;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  border: yellow 3px solid;
-}
-@media (min-width: 600px) {
-  border: green 3px solid;
- }
-@media (min-width: 1000px) {
-  border: blue 3px solid;
- }
-@media (min-width: 1500px) {
-  border: red 3px solid;
- }
+
+/* Navigation Begin */
+  .nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  @media only screen and (max-width: 600px) {
+    .nav-container{
+      /* border: yellow 3px solid; */
+    }
+  }
+  @media (min-width: 600px) {
+    .nav-container{
+      /* border: green 3px solid; */
+    }
+   }
+  @media (min-width: 1000px) {
+    .nav-container{
+      /* border: blue 3px solid; */
+    }
+   }
+  @media (min-width: 1500px) {
+    .nav-container{
+      /* border: red 3px solid; */
+    }
+   }
+/* Navigation End */
+
 .stacked-container{
   display: flex;
   justify-content: space-around;
@@ -129,6 +143,7 @@ html, body {
     min-width: 225px;
     max-height: 225px;
     min-height: 225px;
+    transform: rotate(90deg);
 }
 
 /* Social Media */
